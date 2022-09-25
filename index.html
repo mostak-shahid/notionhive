@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Owl Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="plugins/OwlCarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/OwlCarousel/dist/assets/owl.theme.default.min.css"
+    />
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
+    <style>
+      .KBmap__mapContainer {
+        height: 100vh;
+        max-height: 100vh;
+      }
+      .KBmap__mapHolder {
+        height: 100%;
+      }
+      .KBmap__mapHolder img {
+        width: auto;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header" id="main-header">
+      <div class="top-header">
+        <div class="wrapper">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="left-content">
+                <div class="icon-box d-flex align-items-center">
+                  <div class="icon-wrapper">
+                    <img
+                      class="img-fluid img-icon-box"
+                      src="images/phone.svg"
+                      alt="Phone Icon"
+                      width="16px"
+                      height="16px"
+                    />
+                  </div>
+                  <div class="text-wrapper">
+                    Call us:
+                    <strong><a href="tel:7833672678">783 367 2678</a></strong>
+                  </div>
+                </div>
+              </div>
+              <div class="right-content">
+                <ul>
+                  <li><a href="#">Free brochure</a></li>
+                  <li><a href="#">Help centre</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu">
+        <div class="wrapper">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-2">
+                <div class="logo-area">
+                  <a href="#" class="logo">
+                    <img
+                      src="images/Logo.svg"
+                      alt="Company - Logo"
+                      width="97px"
+                      height="25px"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-10 position-static">
+                <div
+                  class="menu-area d-flex justify-content-between align-items-center"
+                >
+                  <div class="left-menu">
+                    <ul>
+                      <li
+                        class="menu-item menu-item-object-page current-menu-item current_page_item active"
+                      >
+                        <a href="#">Home</a>
+                      </li>
+                      <li class="menu-item menu-item-object-page">
+                        <a href="#">About</a>
+                      </li>
+                      <li class="menu-item menu-item-object-page mos-dropdown">
+                        <a href="#">Products</a>
+                        <div class="mos-dropdown-list bg-white">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-lg-2">
+                                <div class="mega-menu-unit">
+                                  <h4 class="mega-menu-title">By Size</h4>
+                                  <ul class="mega-menu-list">
+                                    <li><a href="#">Small Bifolds</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="mega-menu-unit">
+                                  <h4 class="mega-menu-title">By Type</h4>
+                                  <ul class="mega-menu-list">
+                                    <li><a href="#">Small Bifolds</a></li>
+                                    <li><a href="#">Item 5</a></li>
+                                    <li><a href="#">Item 6</a></li>
+                                    <li><a href="#">Item 7</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="mega-menu-unit">
+                                  <h4 class="mega-menu-title">By Type</h4>
+                                  <ul class="mega-menu-list">
+                                    <li><a href="#">Small Bifolds</a></li>
+                                    <li><a href="#">Item 5</a></li>
+                                    <li><a href="#">Item 6</a></li>
+                                    <li><a href="#">Item 7</a></li>
+                                    <li><a href="#">Item 5</a></li>
+                                    <li><a href="#">Item 6</a></li>
+                                    <li><a href="#">Item 7</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div
+                                  class="promo-unit"
+                                  style="
+                                    background-image: url(images/promo-bg.jpg);
+                                  "
+                                >
+                                  <div class="wrapper">
+                                    <h3 class="promo-title">Bespoke Bifolds</h3>
+                                    <div class="promo-desc">
+                                      Our most popular bifold. Perfect for
+                                      thermal efficiency.
+                                    </div>
+                                    <a href="#" class="promo-link"
+                                      >Create your own</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="menu-item menu-item-object-page">
+                        <a href="#">Projects</a>
+                      </li>
+                      <li class="menu-item menu-item-object-page">
+                        <a href="#">Sustainability</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right-menu">
+                    <ul>
+                      <li class="header-search">
+                        <a href="#"
+                          ><img
+                            src="images/Search.svg"
+                            alt="search icon"
+                            width="16px"
+                            height="16px"
+                        /></a>
+                      </li>
+                      <li class="sign-in"><a href="#">Sign in</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner section section-1">
+      <div class="owl-carousel owl-theme owl-banner">
+        <div class="item">
+          <img
+            class="banner-img"
+            src="images/banner-1.jpg"
+            alt="banner Image 1"
+            width="1920px"
+            height="900px"
+          />
+          <div class="wrapper">
+            <div class="container">
+              <h2 class="banner-title">Modern elegance</h2>
+              <div class="banner-desc">
+                Our most popular bifold. Perfect for thermal efficiency.
+              </div>
+              <div class="btn-wrapper">
+                <a href="#" class="btn btn-alt">Our Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="banner-img"
+            src="images/banner-2.jpg"
+            alt="banner Image 2"
+            width="1920px"
+            height="900px"
+          />
+          <div class="wrapper">
+            <div class="container">
+              <h2 class="banner-title">Modern elegance</h2>
+              <div class="banner-desc">
+                Our most popular bifold. Perfect for thermal efficiency.
+              </div>
+              <div class="btn-wrapper">
+                <a href="#" class="btn btn-alt">Our Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="banner-img"
+            src="images/banner-3.jpg"
+            alt="banner Image 3"
+            width="1920px"
+            height="900px"
+          />
+          <div class="wrapper">
+            <div class="container">
+              <h2 class="banner-title">Modern elegance</h2>
+              <div class="banner-desc">
+                Our most popular bifold. Perfect for thermal efficiency.
+              </div>
+              <div class="btn-wrapper">
+                <a href="#" class="btn btn-alt">Our Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about section section-2">
+      <div class="wrapper">
+        <div class="container">
+          <div class="intro-wrapper text-center">
+            <h2 class="section-title">About us</h2>
+            <div class="section-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme owl-about">
+            <div class="item item-1">
+              <div class="row align-items-end">
+                <div class="col-lg-8">
+                  <div class="img-part d-flex align-items-start">
+                    <img
+                      class="img-fluid img-owl-about"
+                      src="images/about-slider-1.jpg"
+                      alt=""
+                      width="488px"
+                      height="465px"
+                    />
+                    <div class="number-part">
+                      <div class="current">1</div>
+                      <div class="total">Four</div>
+                      <div class="owl-about-next-btn">
+                        <div class="arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="text-part">
+                    <h6 class="slider-title">
+                      Consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                    </h6>
+                    <div class="slider-intro">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation.
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="row align-items-end">
+                <div class="col-lg-8">
+                  <div class="img-part d-flex align-items-start">
+                    <img
+                      class="img-fluid img-owl-about"
+                      src="images/about-slider-2.jpg"
+                      alt=""
+                      width="488px"
+                      height="465px"
+                    />
+                    <div class="number-part">
+                      <div class="current">2</div>
+                      <div class="total">Four</div>
+                      <div class="owl-about-next-btn">
+                        <div class="arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="text-part">
+                    <h6 class="slider-title">
+                      Consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                    </h6>
+                    <div class="slider-intro">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation.
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-3">
+              <div class="row align-items-end">
+                <div class="col-lg-8">
+                  <div class="img-part d-flex align-items-start">
+                    <img
+                      class="img-fluid img-owl-about"
+                      src="images/about-slider-1.jpg"
+                      alt=""
+                      width="488px"
+                      height="465px"
+                    />
+                    <div class="number-part">
+                      <div class="current">3</div>
+                      <div class="total">Four</div>
+                      <div class="owl-about-next-btn">
+                        <div class="arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="text-part">
+                    <h6 class="slider-title">
+                      Consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                    </h6>
+                    <div class="slider-intro">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation.
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-4">
+              <div class="row align-items-end">
+                <div class="col-lg-8">
+                  <div class="img-part d-flex align-items-start">
+                    <img
+                      class="img-fluid img-owl-about"
+                      src="images/about-slider-2.jpg"
+                      alt=""
+                      width="488px"
+                      height="465px"
+                    />
+                    <div class="number-part">
+                      <div class="current">4</div>
+                      <div class="total">Four</div>
+                      <div class="owl-about-next-btn">
+                        <div class="arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="text-part">
+                    <h6 class="slider-title">
+                      Consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                    </h6>
+                    <div class="slider-intro">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation.
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects section section-3">
+      <div class="wrapper">
+        <div class="container">
+          <h6 class="section-title">Projects We have done</h6>
+          <div class="projects-wrapper d-flex justify-content-between">
+            <div class="project-unit">
+              <div class="front">
+                <img src="images/project-1-normal.jpg" alt="Residential" />
+                <h5 class="project-title">Residential</h5>
+              </div>
+              <div class="back">
+                <div class="img-part">
+                  <img src="images/project-hover.jpg" alt="Residential" />
+                  <div class="zoom-icon">+</div>
+                </div>
+                <div class="text-part">
+                  <h5 class="project-title">Residential</h5>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </div>
+                </div>
+
+                <div class="project-number">928 367 3789</div>
+              </div>
+            </div>
+            <div class="project-unit">
+              <div class="front">
+                <img src="images/project-2-normal.jpg" alt="Commercial" />
+                <h5 class="project-title">Commercial</h5>
+              </div>
+              <div class="back">
+                <div class="img-part">
+                  <img src="images/project-hover.jpg" alt="Commercial" />
+                  <div class="zoom-icon">+</div>
+                </div>
+                <div class="text-part">
+                  <h5 class="project-title">Commercial</h5>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </div>
+                </div>
+                <div class="project-number">928 367 3789</div>
+              </div>
+            </div>
+            <div class="project-unit">
+              <div class="front">
+                <img src="images/project-3-normal.jpg" alt="Duplex" />
+                <h5 class="project-title">Duplex</h5>
+              </div>
+              <div class="back">
+                <div class="img-part">
+                  <img src="images/project-hover.jpg" alt="Duplex" />
+                  <div class="zoom-icon">+</div>
+                </div>
+                <div class="text-part">
+                  <h5 class="project-title">Duplex</h5>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </div>
+                </div>
+                <div class="project-number">928 367 3789</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blogs section section-4">
+      <div class="wrapper">
+        <div class="container">
+          <div class="intro-wrapper">
+            <h2 class="section-title">Blog</h2>
+          </div>
+          <div class="blogs-wrapper">
+            <div class="blog-unit">
+              <div class="img-part">
+                <img
+                  src="images/blog-1.jpg"
+                  alt="Lorem ipsom dolor"
+                  class="img-fluid img-blog"
+                  width="540px"
+                  height="270px"
+                />
+                <div class="zoom-icon">+</div>
+              </div>
+              <div class="text-part">
+                <div class="category">Window</div>
+                <h5 class="blog-titile">1. Lorem ipsom dolor</h5>
+              </div>
+            </div>
+            <div class="blog-unit">
+              <div class="img-part">
+                <img
+                  src="images/blog-2.jpg"
+                  alt="Consectetur adipiscing sed do"
+                  class="img-fluid img-blog"
+                  width="540px"
+                  height="270px"
+                />
+                <div class="zoom-icon">+</div>
+              </div>
+              <div class="text-part">
+                <div class="category">Window</div>
+                <h5 class="blog-titile">2. Consectetur adipiscing sed do</h5>
+              </div>
+            </div>
+            <div class="blog-unit">
+              <div class="img-part">
+                <img
+                  src="images/blog-1.jpg"
+                  alt="Lorem ipsom dolor"
+                  class="img-fluid img-blog"
+                  width="540px"
+                  height="270px"
+                />
+                <div class="zoom-icon">+</div>
+              </div>
+              <div class="text-part">
+                <div class="category">Window</div>
+                <h5 class="blog-titile">3. Lorem ipsom dolor</h5>
+              </div>
+            </div>
+            <div class="blog-unit">
+              <div class="img-part">
+                <img
+                  src="images/blog-2.jpg"
+                  alt="Consectetur adipiscing sed do"
+                  class="img-fluid img-blog"
+                  width="540px"
+                  height="270px"
+                />
+                <div class="zoom-icon">+</div>
+              </div>
+              <div class="text-part">
+                <div class="category">Window</div>
+                <h5 class="blog-titile">4. LConsectetur adipiscing sed do</h5>
+              </div>
+            </div>
+            <div class="blog-unit">
+              <div class="img-part">
+                <img
+                  src="images/blog-1.jpg"
+                  alt="Lorem ipsom dolor"
+                  class="img-fluid img-blog"
+                  width="540px"
+                  height="270px"
+                />
+                <div class="zoom-icon">+</div>
+              </div>
+              <div class="text-part">
+                <div class="category">Window</div>
+                <h5 class="blog-titile">5. Lorem ipsom dolor</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="branches section section-5">
+      <div class="wrapper">
+        <div class="container">
+          <div class="intro-wrapper text-center">
+            <h2 class="section-title">Our Branches</h2>
+            <div class="section-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </div>
+          </div>
+          <div class="map-part">
+            <div class="KBmap" id="KBtestmap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta section section-6">
+      <div class="wrapper">
+        <div class="container">
+          <div class="intro-wrapper text-center">
+            <h2 class="section-title">Let’s Contact</h2>
+            <div class="section-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </div>
+            <div class="btn-wrapper">
+              <a href="#" class="btn btn-alt">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="container text-center">
+          <div class="copywrite">Copyright @2022 | Notionhive</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="plugins/OwlCarousel/dist/owl.carousel.js"></script>
+
+    <link href="plugins/images-markers/css/KBmapmarkers.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="plugins/images-markers/js/KBmapmarkers.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-banner").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          dots: true,
+          items: 1,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: false,
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+        });
+        var owl_about = $(".owl-about");
+        owl_about.owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          dots: false,
+          items: 1,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: false,
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+        });
+        $(".owl-about-next-btn").click(function () {
+          owl_about.trigger("next.owl.carousel");
+        });
+      });
+    </script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // gsap.set(".blogs-wrapper", {
+      //   backgroundImage: `url(https://source.unsplash.com/random/${
+      //     innerWidth * 3
+      //   }x${innerHeight})`,
+      // });
+      console.log(540 * 5 + 30 * 4);
+      gsap.to(".blogs-wrapper", {
+        xPercent: -110,
+        x: () => innerWidth,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".blogs-wrapper",
+          start: "top top",
+          //end: () => innerWidth,
+          end: () => 540 * 5 + 30 * 4,
+          scrub: true,
+          pin: true,
+          invalidateOnRefresh: true,
+          anticipatePin: 1,
+        },
+      });
+    </script>
+    <script>
+      var json = {
+        mapMarker1: {
+          cordX: "43",
+          cordY: "40",
+          icon: "images/map-marker.svg",
+          modal: {
+            title: "Dhaka Branches",
+            content:
+              '<div class="all-branches"><div class="branch-unit"><div class="branch-title">Dhanmondi Branch</div><div class="branch-info"><div class="branch-address">Green Plaza, 4th Floor Plot-B, Road-8/A Satmasjid Road, Dhanmondi, Dhaka-1209</div><div class="branch-phone">+880-4-0937432<br>+8809370272634</div></div></div><div class="branch-unit"><div class="branch-title">Motijheel Branch</div><div class="branch-info"><div class="branch-address">Rokon Bhaban, 2nd Floor Room # 205, 49 Motijheel C/A Dhaka-1000</div><div class="branch-phone">+880028397732<br><br>+880289376378</div></div></div></div>',
+          },
+        },
+        mapMarker2: {
+          cordX: "33",
+          cordY: "39",
+          icon: "images/map-marker.svg",
+          modal: {
+            title: "Sirajganj Branches",
+            content:
+              '<div class="all-branches"><div class="branch-unit"><div class="branch-title">Dhanmondi Branch</div><div class="branch-info"><div class="branch-address">Green Plaza, 4th Floor Plot-B, Road-8/A Satmasjid Road, Dhanmondi, Dhaka-1209</div><div class="branch-phone">+880-4-0937432<br>+8809370272634</div></div></div><div class="branch-unit"><div class="branch-title">Motijheel Branch</div><div class="branch-info"><div class="branch-address">Rokon Bhaban, 2nd Floor Room # 205, 49 Motijheel C/A Dhaka-1000</div><div class="branch-phone">+880028397732<br><br>+880289376378</div></div></div></div>',
+          },
+        },
+      };
+
+      (function ($) {
+        $(document).ready(function () {
+          createKBmap("KBtestmap", "images/map.svg");
+
+          KBtestmap.importJSON(json);
+
+          KBtestmap.showAllMapMarkers();
+        });
+      })(jQuery);
+    </script>
+  </body>
+</html>
